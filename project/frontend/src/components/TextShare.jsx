@@ -13,7 +13,7 @@ export default function TextDrop() {
       return;
     }
 
-    const res = await axios.post("http://localhost:5000/api/share-text", {
+    const res = await axios.post("https://q-ej0o.onrender.com/api/share-text", {
       text,
     });
 
@@ -65,3 +65,4 @@ export default function TextDrop() {
     </motion.div>
   );
 }
+
