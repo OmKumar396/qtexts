@@ -13,14 +13,14 @@ export default function RetrievePanel() {
     try {
       if (code.startsWith("T")) {
         const res = await axios.get(
-          `http://localhost:5000/api/get-text/${code}`
+          `https://q-ej0o.onrender.com/api/get-text/${code}`
         );
         setOutput(res.data.text);
         toast.success("Text retrieved.");
       }
 
       if (code.startsWith("F")) {
-        window.open(`http://localhost:5000/api/get-file/${code}`);
+        window.open(`https://q-ej0o.onrender.com/api/get-file/${code}`);
         toast.success("File download started.");
       }
     } catch {
@@ -65,3 +65,4 @@ export default function RetrievePanel() {
     </motion.div>
   );
 }
+
