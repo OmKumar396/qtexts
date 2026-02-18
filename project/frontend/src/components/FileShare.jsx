@@ -17,7 +17,7 @@ export default function FileDrop() {
     formData.append("file", file);
 
     const res = await axios.post(
-      "http://localhost:5000/api/upload-file",
+      "https://q-ej0o.onrender.com/api/upload-file",
       formData
     );
 
@@ -68,3 +68,4 @@ export default function FileDrop() {
     </motion.div>
   );
 }
+
